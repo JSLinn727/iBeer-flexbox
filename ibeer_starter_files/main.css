@@ -16,7 +16,6 @@ body{
     line-height: 1.8;
     margin: 0;
     background-color: #eeebda;
-
 }
 
 h1, h2, h3{
@@ -28,18 +27,18 @@ img{
     padding: 0;
     margin: 0;
     display: block;
+    height: 14em;
+    flex-direction:
 }
 .wrapper{
     width: 1000px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-d
-
 #site-header{
-
+  flex-basis: 1000px;
 
     /*
         TODO
@@ -50,8 +49,11 @@ d
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
     background-image: url("../ibeer_starter_files/img/header-img.jpg");
+    background-size: cover;
+    background-position: right bottom;
+
+
 
     /*
         TODO:
@@ -59,8 +61,6 @@ d
         make sure that the path to the image is correct
     */
 
-    background-size: cover;
-    background-position: right bottom;
 }
 #site-header div h1,
 #site-header div h3{
@@ -75,6 +75,7 @@ d
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+  font-family: "Dancing Script"
     /*
         TODO:
         - Use the script font: 'Dancing Script' fot this text
@@ -116,6 +117,7 @@ main{
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     position: relative;
     top: -3em;
+    margin-left: 3em;
     flex: 2;
     /*
         TODO:
@@ -128,6 +130,10 @@ aside{
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
     flex: 1;
+    position: relative;
+    margin-right: 3em;
+    flex-basis: auto;
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -182,7 +188,7 @@ article footer p{
     */
 }
 #site-footer{
-flex-direction: c;
+flex-wrap: wrap;
 
 
     background: #333;
