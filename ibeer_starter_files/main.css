@@ -1,20 +1,5 @@
-/*
-
-FONTS:
-
-'Josefin Sans'
-'Noto Serif'
-'Dancing Script'
-
-COLORS:
-
-light tan: #eeebda
-
-*/
-
 html {
   font-family: 'Noto Serif', serif;
-
 }
 
 body {
@@ -23,8 +8,10 @@ body {
   background-color: #eeebda;
 }
 
-h1, h2, h3 {
-  font-family: "Josefin Sans", sans-serif;
+h1,
+h2,
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
   margin-top: 0;
 }
 
@@ -34,118 +21,29 @@ img {
   margin: 0;
   display: block;
   height: 14em;
-  flex-direction:
-}
-
-.wrapper {
-  width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#site-header {
-  flex-basis: 1000px;
-  /*
-        TODO
-        - Flexbox property here
-    */
-}
-
-#site-header div {
-  text-align: center;
-  padding: 60px 0 120px 0;
-  font-size: 4em;
-  background-image: url("../ibeer_starter_files/img/header-img.jpg");
-  background-size: cover;
-  background-position: right bottom;
-  /*
-        TODO:
-        - Add a background image "header-img.jpg"
-        make sure that the path to the image is correct
-    */
-}
-
-#site-header div h1, #site-header div h3 {
-  margin: 0;
-  line-height: 1;
-  position: relative;
-}
-
-#site-header div h1 {
-  top: 20px;
-}
-
-#site-header div h3 {
-  color: white;
-  bottom: 20px;
-  text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3);
-  font-family: "Dancing Script"
-  /*
-        TODO:
-        - Use the script font: 'Dancing Script' fot this text
-    */
-}
-
-#main-navigation {
-  background: #444;
-  display: flex;
-  /*
-        TODO:
-        - Use Flexbox to arrange the navigation links
-    */
-}
-
-#main-navigation a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  /*
-        TODO:
-        - Flexbox - Create general spacing between nav links
-    */
-}
-
-#main-navigation #logo {
-  margin-right: 400px;
-  /*
-        TODO:
-        - Flexbox - The logo needs to take up more space
-        that the other links
-    */
+  flex-direction: ;
 }
 
 main {
   padding: 20px;
   background-color: #444;
-  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.3);
   position: relative;
   top: -3em;
   margin-left: 3em;
   flex: 2;
-  /*
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
 }
 
 aside {
   padding: 20px;
   background-color: #eee;
-  box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
   flex: 1;
   position: relative;
   margin-right: 3em;
   flex-direction: column;
   top: -50px;
-  /*
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
+  height: 70em;
 }
 
 aside h3 {
@@ -163,7 +61,7 @@ aside img {
 
 article {
   background-color: white;
-  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.3);
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -188,16 +86,11 @@ article time {
   display: block;
   margin-bottom: 30px;
   color: #666;
-font-weight: bold;
+  font-weight: bold;
 }
 
 article img {
   float: right;
-  /*
-        TODO:
-        - Float article images to the right
-        and match sizes and spacing to the mockup
-    */
 }
 
 article footer p {
@@ -209,11 +102,61 @@ article footer p {
   border-top: 1px solid gray;
   text-transform: uppercase;
   color: gray;
-  /*
-        TODO:
-        - Style the article footer
-        HINT: Look to the article header;
-    */
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#site-header {
+  flex-basis: 1000px;
+}
+
+#site-header div {
+  text-align: center;
+  padding: 60px 0 120px 0;
+  font-size: 4em;
+  background-image: url('../ibeer_starter_files/img/header-img.jpg');
+  background-size: cover;
+  background-position: right bottom;
+}
+
+#site-header div h1,
+#site-header div h3 {
+  margin: 0;
+  line-height: 1;
+  position: relative;
+}
+
+#site-header div h1 {
+  top: 20px;
+}
+
+#site-header div h3 {
+  color: white;
+  bottom: 20px;
+  text-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'Dancing Script';
+}
+
+#main-navigation {
+  background: #444;
+  display: flex;
+}
+
+#main-navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+#main-navigation #logo {
+  margin-right: 400px;
 }
 
 #site-footer {
@@ -222,10 +165,6 @@ article footer p {
   color: white;
   text-align: center;
   padding: 1.5em;
-    font-family: 'Noto Serif', serif;
-    font-size: 18px;
-  /*
-        TODO:
-        - Style the site footer
-    */
+  font-family: 'Noto Serif', serif;
+  font-size: 18px;
 }
