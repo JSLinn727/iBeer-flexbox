@@ -1,18 +1,23 @@
 html {
   font-family: 'Noto Serif', serif;
+  width: 100%;
 }
 
 body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   line-height: 1.8;
-  margin: 0;
   background-color: #eeebda;
+  width: 100%;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Josefin Sans', sans-serif;
-  margin-top: 0;
+  margin-top: 1em;
 }
 
 img {
@@ -55,7 +60,7 @@ aside h3 {
 
 aside img {
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin: 15px;
   border: 2px solid white;
 }
 
@@ -104,24 +109,32 @@ article footer p {
   color: gray;
 }
 
+.jumbotron {
+  width: 100%;
+}
+
 .wrapper {
-  width: 1000px;
-  margin: 0 auto;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1000px;
+  margin: 0;
   flex-wrap: wrap;
 }
 
 #site-header {
   flex-basis: 1000px;
+  width: 100%;
 }
 
 #site-header div {
   text-align: center;
   padding: 60px 0 120px 0;
   font-size: 4em;
-  background-image: url('../ibeer_starter_files/img/header-img.jpg');
+  background-image: url('./img/header-img.jpg');
   background-size: cover;
   background-position: right bottom;
+  width: 100%;
 }
 
 #site-header div h1,
@@ -145,6 +158,8 @@ article footer p {
 #main-navigation {
   background: #444;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #main-navigation a {
@@ -167,4 +182,5 @@ article footer p {
   padding: 1.5em;
   font-family: 'Noto Serif', serif;
   font-size: 18px;
+  width: 100%;
 }
